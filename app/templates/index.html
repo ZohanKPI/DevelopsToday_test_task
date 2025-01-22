@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Advisor Chat</title>
+</head>
+<body>
+    <h1>Cocktail Advisor Chat</h1>
+    <form method="get" action="/chat/">
+        <label for="user_input">Ask me something:</label>
+        <input type="text" id="user_input" name="user_input" required>
+        <button type="submit">Send</button>
+    </form>
+
+    <h3>Response:</h3>
+    <p>{{ response | safe }}</p>
+</body>
+</html>
